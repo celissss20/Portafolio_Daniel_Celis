@@ -31,7 +31,6 @@ body {
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
-
 }
 
 .header {
@@ -189,11 +188,11 @@ span {
     justify-content: center;
     align-items: center;
     font-size: 5.2rem;
-    margin-bottom: 5rem;  
+    margin-bottom: 5rem;
 }
 
 .skills-title span {
-    margin: 0 1rem;  
+    margin: 0 1rem;
 }
 
 .skills .contenedor-skills ul li {
@@ -205,26 +204,26 @@ span {
     flex-wrap: wrap;
     gap: 5rem;
     justify-content: center;
-    
+
 }
 
 .item {
     font-size: 2.5rem;
 }
 
-.div-icon{
+.div-icon {
     height: 15rem;
-    width: 15rem; 
+    width: 15rem;
 }
 
-.icon-img{
-   height: 15rem;
-   width: 15rem;
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, 4);
-   transition: 1s; 
+.icon-img {
+    height: 15rem;
+    width: 15rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 4);
+    transition: 1s;
 }
 
-.icon-img:hover{
+.icon-img:hover {
     filter: grayscale(1) blur(3px);
 }
 
@@ -249,3 +248,86 @@ span {
 }
 
 /*Diseño de los proyects*/
+
+.proyects {
+    background-color: #940B92;
+}
+
+.proyects {
+    background: linear-gradient(#001b5f, var(--second-bg-color));
+}
+
+.proyects h2 {
+    margin-bottom: 4rem;
+}
+
+.proyects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.proyects-container .proyects-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.proyects-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.proyects-box:hover img{
+    transform: scale(1.1);
+}
+
+.proyects-box .proyects-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.proyects-box:hover .proyects-layer{
+    transform: translateY(0);
+}
+
+.proyects-layer h4{
+    font-size: 3rem;    
+}
+
+.proyects-layer p{
+    font-size: 1.5rem;
+    margin: .3rem 0 1rem;
+}
+
+.proyects-layer a{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 5rem;
+   height: 5rem;
+   background: var(--text-color);
+   border-radius: 50%;
+   margin: 2rem;
+}
+
+.proyects-layer a i {
+    font-size: 3rem;
+    color: var(--second-bg-color);
+    display: inline-flex;
+}
