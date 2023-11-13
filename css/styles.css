@@ -250,15 +250,27 @@ span {
 /*Diseño de los proyects*/
 
 .proyects {
-    background-color: #940B92;
-}
-
-.proyects {
     background: linear-gradient(#001b5f, var(--second-bg-color));
 }
 
 .proyects h2 {
     margin-bottom: 4rem;
+}
+
+.proyects-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.btn-proyect{
+    font-size: 1.7rem;
+    margin: 2rem;
+    background: none;
+    color: var(--text-color);
+    font-weight:bold ;
+    cursor: pointer;
 }
 
 .proyects-container {
@@ -268,12 +280,21 @@ span {
     gap: 2.5rem;
 }
 
-.proyects-container .proyects-box{
+ .proyects-box{
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
+    float: left;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show{
+    display: block;
+    opacity: 1;
 }
 
 .proyects-box img{
@@ -291,7 +312,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient( rgba(0, 0, 0, .1), var(--main-color));
+    background: var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,7 +320,7 @@ span {
     text-align: center;
     padding: 0 4rem;
     transform: translateY(100%);
-    transition: .5s ease;
+    transition: .7s ease;
 }
 
 .proyects-box:hover .proyects-layer{
@@ -307,12 +328,20 @@ span {
 }
 
 .proyects-layer h4{
-    font-size: 3rem;    
+    font-size: 3rem;
+    color: var(--second-bg-color);    
 }
 
 .proyects-layer p{
     font-size: 1.5rem;
     margin: .3rem 0 1rem;
+    color: var(--second-bg-color); 
+}
+
+.pro-span{
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--second-bg-color);
 }
 
 .proyects-layer a{
@@ -331,3 +360,4 @@ span {
     color: var(--second-bg-color);
     display: inline-flex;
 }
+

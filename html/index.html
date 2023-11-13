@@ -121,15 +121,6 @@
         <li class="item">
          <a href="#skills">
           <div class="div-icon">
-            <img class="icon-img" src="../assets/java_icon.png" alt="Java icon">
-             <div class="icon-text">Java</div>
-          </div>
-         </a>
-        </li>
-
-        <li class="item">
-         <a href="#skills">
-          <div class="div-icon">
             <img class="icon-img" src="../assets/Git-icon.png" alt="Git icon">
              <div class="icon-text">GitHub</div>
           </div>
@@ -162,12 +153,21 @@
     <section class="proyects" id="proyects">
      <h2 class="heading">Lastest <span>proyects</span></h2>
         
+      <div class="proyects-buttons">
+        <button class="btn-proyect" onclick="filterProyects('all')">All</button>
+        <button class="btn-proyect" onclick="filterProyects('html')">Html</button>
+        <button class="btn-proyect" onclick="filterProyects('css')">Css</button>
+        <button class="btn-proyect" onclick="filterProyects('javascript')">JavaScript</button>
+        <button class="btn-proyect" onclick="filterProyects('react')">React</button>
+      </div>
+
      <div class="proyects-container">
-        <div class="proyects-box">
+
+        <div class="proyects-box html css javascript react">
          <img src="../assets/pro-react-traba.png" alt="Proyecto react">
           <div class="proyects-layer">
-            <h4>Web desing</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati explicabo temporibus perspiciatis, dolores repellat.</p>
+            <h4>Employee management</h4>
+            <p> <span class="pro-span">React/Html/JavaScvript/Css</span><br> SPA application designed for the management of workers, managed by means of forms.</p>
             <div class="proyects-links">
             <a href="https://org-weld-omega.vercel.app/" target="_blank">
               <i class='bx bx-link-external'></i></a>
@@ -177,10 +177,10 @@
           </div>
         </div>  
      
-        <div class="proyects-box">
+        <div class="proyects-box html">
          <img src="../assets/pro-react-traba.png" alt="Proyecto react">
           <div class="proyects-layer">
-            <h4>Web desing</h4>
+            <h4>Primero</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati explicabo temporibus perspiciatis, dolores repellat.</p>
             <div class="proyects-links">
               <a href="#proyects"><i class='bx bx-link-external'></i></a>
@@ -189,10 +189,10 @@
           </div>
         </div>  
    
-        <div class="proyects-box">
+        <div class="proyects-box css">
          <img src="../assets/pro-react-traba.png" alt="Proyecto react">
           <div class="proyects-layer">
-            <h4>Web desing</h4>
+            <h4>Segundo</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati explicabo temporibus perspiciatis, dolores repellat.</p>
             <div class="proyects-links">
               <a href="#proyects"><i class='bx bx-link-external'></i></a>
@@ -201,10 +201,10 @@
           </div>
         </div>  
      
-        <div class="proyects-box">
+        <div class="proyects-box javascript">
          <img src="../assets/pro-react-traba.png" alt="Proyecto react">
           <div class="proyects-layer">
-            <h4>Web desing</h4>
+            <h4>Tercero</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati explicabo temporibus perspiciatis, dolores repellat.</p>
             <div class="proyects-links">
               <a href="#proyects"><i class='bx bx-link-external'></i></a>
@@ -212,6 +212,7 @@
             </div>
           </div>
         </div>  
+
     </div>
 
     </section>
