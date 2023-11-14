@@ -1,0 +1,68 @@
+/*Diseño de las skills*/
+.skills {
+    background: linear-gradient(var(--second-bg-color), #001b5f);
+}
+
+.skills-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5.2rem;
+    margin-bottom: 5rem;
+}
+
+.skills-title span {
+    margin: 0 1rem;
+}
+
+.skills .contenedor-skills ul li {
+    list-style-type: none;
+}
+
+.ul-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+
+}
+
+.item {
+    font-size: 2.5rem;
+}
+
+.div-icon {
+    height: 15rem;
+    width: 15rem;
+}
+
+.icon-img {
+    height: 15rem;
+    width: 15rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 4);
+    transition: 1s;
+}
+
+.icon-img:hover {
+    filter: grayscale(1) blur(3px);
+}
+
+.icon-text {
+    font-size: 3rem;
+    color: #940B92;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 1s;
+}
+
+.div-icon:hover .icon-text {
+    opacity: 1;
+    transform: translateY(-250%);
+}
+
+.div-icon:hover .icon-img {
+    filter: grayscale(1) blur(3px);
+}

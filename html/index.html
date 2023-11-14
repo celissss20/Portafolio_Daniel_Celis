@@ -8,7 +8,17 @@
     <!--box icons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/aboutMe.css">
+    <link rel="stylesheet" href="../css/skills.css">
+    <link rel="stylesheet" href="../css/proyects.css">
+
 </head>
 
 <body>
@@ -153,17 +163,19 @@
     <section class="proyects" id="proyects">
      <h2 class="heading">Lastest <span>proyects</span></h2>
         
-      <div class="proyects-buttons">
-        <button class="btn-proyect" onclick="filterProyects('all')">All</button>
-        <button class="btn-proyect" onclick="filterProyects('html')">Html</button>
-        <button class="btn-proyect" onclick="filterProyects('css')">Css</button>
-        <button class="btn-proyect" onclick="filterProyects('javascript')">JavaScript</button>
-        <button class="btn-proyect" onclick="filterProyects('react')">React</button>
+     <div class="proyects-wrap">
+
+    <div class="proyects-buttons">
+      <a href="#proyects" class="category-item" category="all">All</a>
+      <a href="#proyects" class="category-item" category="react">React</a>
+      <a href="#proyects" class="category-item" category="html">Html</a>
+      <a href="#proyects" class="category-item" category="css">Css</a>
+      <a href="#proyects" class="category-item" category="javascript">JavaScript</a>
       </div>
 
      <div class="proyects-container">
 
-        <div class="proyects-box html css javascript react">
+        <div class="proyects-box react html css javascript">
          <img src="../assets/pro-react-traba.png" alt="Proyecto react">
           <div class="proyects-layer">
             <h4>Employee management</h4>
@@ -180,7 +192,7 @@
         <div class="proyects-box html">
          <img src="../assets/pro-react-traba.png" alt="Proyecto react">
           <div class="proyects-layer">
-            <h4>Primero</h4>
+            <h4>HTML</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati explicabo temporibus perspiciatis, dolores repellat.</p>
             <div class="proyects-links">
               <a href="#proyects"><i class='bx bx-link-external'></i></a>
@@ -192,7 +204,7 @@
         <div class="proyects-box css">
          <img src="../assets/pro-react-traba.png" alt="Proyecto react">
           <div class="proyects-layer">
-            <h4>Segundo</h4>
+            <h4>CSS</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati explicabo temporibus perspiciatis, dolores repellat.</p>
             <div class="proyects-links">
               <a href="#proyects"><i class='bx bx-link-external'></i></a>
@@ -204,7 +216,7 @@
         <div class="proyects-box javascript">
          <img src="../assets/pro-react-traba.png" alt="Proyecto react">
           <div class="proyects-layer">
-            <h4>Tercero</h4>
+            <h4>JavaScript</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati explicabo temporibus perspiciatis, dolores repellat.</p>
             <div class="proyects-links">
               <a href="#proyects"><i class='bx bx-link-external'></i></a>
@@ -214,7 +226,7 @@
         </div>  
 
     </div>
-
+  </div>
     </section>
 
 

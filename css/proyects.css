@@ -1,0 +1,116 @@
+/*Diseño de los proyects*/
+
+.proyects {
+    background: linear-gradient(#001b5f, var(--second-bg-color));
+}
+
+.proyects h2 {
+    margin-bottom: 4rem;
+}
+
+.proyects-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+    font-size: 2rem;
+}
+
+.proyects-buttons .category-item{
+    margin: 2rem;
+    color: var(--text-color);
+}
+
+.proyects-buttons .ct_item_active{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.btn-proyect{
+    font-size: 1.7rem;
+    margin: 2rem;
+    background: none;
+    color: var(--text-color);
+    font-weight:bold ;
+    cursor: pointer;
+}
+
+.proyects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.proyects-container .proyects-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    transition: all 1s ;
+}
+
+.proyects-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.proyects-box:hover img{
+    transform: scale(1.1);
+}
+
+.proyects-box .proyects-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .7s ease;
+}
+
+.proyects-box:hover .proyects-layer{
+    transform: translateY(0);
+}
+
+.proyects-layer h4{
+    font-size: 3rem;
+    color: var(--second-bg-color);    
+}
+
+.proyects-layer p{
+    font-size: 1.5rem;
+    margin: .3rem 0 1rem;
+    color: var(--second-bg-color); 
+}
+
+.pro-span{
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.proyects-layer a{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 5rem;
+   height: 5rem;
+   background: var(--text-color);
+   border-radius: 50%;
+   margin: 2rem;
+}
+
+.proyects-layer a i {
+    font-size: 3rem;
+    color: var(--second-bg-color);
+    display: inline-flex;
+}

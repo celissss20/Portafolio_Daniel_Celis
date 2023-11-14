@@ -1,39 +1,39 @@
-/* Filtro para los proyectos*/
+$(document).ready(function(){
+    $('.proyects-buttons .category-item[category="all"]').addClass('ct_item_active');
 
-filterProyects("all");
+    //Filtrando los productos *************************
+    $('.category-item').click(function(){
+        var catProdutc = $(this).attr('category');
+        console.log(catProdutc);
 
-function filterProyects(c){
-    var x, i;
-    console.log("Button clicked:", c);
-    x = document.getElementsByClassName("proyects-box");
-    if (c == "all")  c = "";
-    for (i= 0; i < x.length; i++) {
-       removeClass(x[i], "show");
-       if(x[i].className.indexOf(c) > -1) addClass(x[i], "show")
-    }
-}
+        //Agregar la clase active de CSS al ítem seleccionado
+        $('.category-item').removeClass('ct_item_active');
+        $(this).addClass('ct_item_active');
 
-function addClass(element, name){
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
+        //Ocultando productos-----------------
+        $('.proyects-box').css('transform', 'scale(0)');
 
-    for (i = 0; i < arr2.length; i++) {
-        if(arr1.indexOf(arr2[i]) == -1){
-            element.className += " " + arr2[i];
+        function hideProduct() {
+            $('.proyects-box').hide();
         }
-    }
-} 
+        setTimeout(hideProduct,700);
 
-function removeClass(element, name){
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
+        //Mostrando productos-----------------
+        function showProducts() {
+            $('.proyects-box').hide(); // Ocultar todos los proyectos
 
-    for (i= 0; i < arr2.length; i++) {
-        while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]) , 1);
+            // Filtrar proyectos basados en las clases de categoría seleccionadas
+            var selectedCategory = '.' + $('.ct_item_active').attr('category');
+            $(selectedCategory).show().css('transform', 'scale(1)');
         }
-    }
-    element.className = arr1.join(" ");
-}
+        setTimeout(showProducts,700);
+    });
+
+    //Mostrando todos los productos-----------------
+    $('.category-item[category="all"]').click(function(){
+        function showAll() {
+            $('.proyects-box').show().css('transform', 'scale(1)');
+        }
+        setTimeout(showAll,700);
+    });
+});
