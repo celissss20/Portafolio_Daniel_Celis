@@ -14,6 +14,7 @@
     justify-content: center;
     margin: 2rem;
     font-size: 2rem;
+    text-decoration: none;
 }
 
 .proyects-buttons .category-item{
@@ -66,7 +67,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--main-color);
+    background: linear-gradient(to top, #000000, #000000d9 );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +76,7 @@
     padding: 0 4rem;
     transform: translateY(100%);
     transition: .7s ease;
+    
 }
 
 .proyects-box:hover .proyects-layer{
@@ -83,19 +85,61 @@
 
 .proyects-layer h4{
     font-size: 3rem;
-    color: var(--second-bg-color);    
+    color: var(--text-color);  
+    font-weight: bold;  
+}
+
+.proyect-icon{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+.proyect-icon span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+    gap: .5rem;
+    padding: .3rem;
+}
+
+#react-color{
+    background:#5ED3F4;
+    color:black;
+    border-radius: .5rem;
+}
+
+#html-color{
+    background:#DD4B25;
+    color:black;
+    border-radius: .5rem;
+}
+
+#css-color{
+    background:#254BDD;
+    color:black;
+    border-radius: .5rem;
+}
+#script-color{
+    background:#E8D44D;
+    color:black;
+    border-radius: .5rem;
 }
 
 .proyects-layer p{
     font-size: 1.5rem;
     margin: .3rem 0 1rem;
-    color: var(--second-bg-color); 
+    color: var(--text-color); 
 }
 
 .pro-span{
     font-weight: bold;
     font-size: 2rem;
-    color: var(--second-bg-color);
+    color: var(--text-color);
 }
 
 .proyects-layer a{
@@ -107,6 +151,7 @@
    background: var(--text-color);
    border-radius: 50%;
    margin: 2rem;
+   text-decoration: none;
 }
 
 .proyects-layer a i {

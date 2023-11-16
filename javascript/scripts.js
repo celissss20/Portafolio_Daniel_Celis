@@ -36,4 +36,7 @@ $(document).ready(function(){
         }
         setTimeout(showAll,700);
     });
+
+
 });
+
