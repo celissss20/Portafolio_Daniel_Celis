@@ -2,6 +2,7 @@
 
 .proyects {
     background: linear-gradient(#001b5f, var(--second-bg-color));
+    padding-top: 0;
 }
 
 .proyects h2 {
@@ -15,10 +16,6 @@
     margin: 2rem;
     font-size: 2rem;
     text-decoration: none;
-}
-
-.carrusel-containner{
-    display: flex;
 }
 
 .proyects-buttons .category-item{
@@ -41,10 +38,21 @@
 }
 
 .proyects-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    gap: 2.5rem;
+    max-width: 100%;
+    height: 100%;
+}
+
+.carrusel1,.carrusel2{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    padding: 4rem 4rem;
+    max-width: 100%;
+}
+
+#btn-carrusel{
+    width: 4%;
 }
 
 .proyects-container .proyects-box{
@@ -54,7 +62,8 @@
     overflow: hidden;
     display: flex;
     transition: all 1s;
-    width: 100%;
+    width: 30%;
+    margin: 2rem;
 }
 
 .proyects-box img{
@@ -90,7 +99,7 @@
 
 
 .proyects-layer h4{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--text-color);  
     font-weight: bold;  
 }
@@ -102,6 +111,7 @@
     align-items: center;
     gap: .5rem;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .proyect-icon span{
@@ -111,29 +121,31 @@
     font-weight: normal;
     gap: .5rem;
     padding: .3rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
 }
 
 #react-color{
     background:#5ED3F4;
     color:black;
-    border-radius: .5rem;
+   
 }
 
 #html-color{
     background:#DD4B25;
     color:black;
-    border-radius: .5rem;
+  
 }
 
 #css-color{
     background:#254BDD;
     color:black;
-    border-radius: .5rem;
+
+
 }
 #script-color{
     background:#E8D44D;
     color:black;
-    border-radius: .5rem;
 }
 
 .proyects-layer p{

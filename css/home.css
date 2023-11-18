@@ -9,6 +9,12 @@
     width: 35vw;
     border-radius: 70%;
     margin: 5rem;
+    border: 0.5rem solid transparent; /* Elimina el borde inicial */
+    box-shadow:
+        0 0 1rem #d4ff00, /* Sombra naranja */
+        0 0 1.5rem #FFFF00, /* Sombra amarilla */
+        0 0 2rem #0000ff, /* Sombra azul claro */
+        0 0 2.5rem #0000FF; /* Sombra azul */
 }
 
 .home-content h3 {

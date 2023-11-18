@@ -1,6 +1,7 @@
 /*Diseño de las skills*/
 .skills {
     background: linear-gradient(var(--second-bg-color), #001b5f);
+    padding-bottom: 0%;
 }
 
 .skills-title {
@@ -8,7 +9,7 @@
     justify-content: center;
     align-items: center;
     font-size: 5.2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 .skills-title span {
@@ -22,12 +23,11 @@
 .ul-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 4rem;
     justify-content: center;
-
 }
 
-.item-s {
+.item{
     font-size: 2.5rem;
 }
 
@@ -39,6 +39,7 @@
 .icon-img {
     height: 15rem;
     width: 15rem;
+    border-radius: 1.5rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 4);
     transition: 1s;
 }
@@ -49,7 +50,7 @@
 
 .icon-text {
     font-size: 3rem;
-    color: #940B92;
+    color: #03aabc;
     font-weight: bold;
     display: flex;
     align-items: center;
