@@ -2,6 +2,7 @@
 .skills {
     background: linear-gradient(var(--second-bg-color), #001b5f);
     padding-bottom: 0%;
+    padding-top: 12rem;
 }
 
 .skills-title {

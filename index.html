@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="../css/skills.css" />
     <link rel="stylesheet" href="../css/proyects.css" />
     <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
   </head>
 
   <body>
@@ -52,7 +53,7 @@
       <div class="home-content">
         <h3>Hola, soy</h3>
         <h1>Daniel Celis</h1>
-        <h3>Soy un <span>Desarrollador FrontEnd</span></h3>
+        <h3>Soy un <span>Desarrollador FrontEnd!</span></h3>
         <p>
           ¡Bienvenido a mi portafolio web! Aquí encontrarás una muestra de mi
           trabajo, donde he combinado mi pasión por el diseño y la programación
@@ -96,7 +97,7 @@
           Soy un ingeniero de sistemas con una pasión por el desarrollo
           front-end, mi atención se centra en la creación de interfaces de
           usuario atractivas y altamente funcionales que cautivan a los usuarios
-          y ofrecen experiencias en línea excepcionales.<br />
+          y ofrecen experiencias en línea excepcionales.<br/><br/>
           Mi capacidad para traducir conceptos de diseño en sitios web
           interactivos y receptivos me permite colaborar eficazmente con
           diseñadores y equipos de desarrollo completos. Siempre estoy buscando
@@ -329,7 +330,7 @@
 
     <!--Seccion de contactos-->
     <section class="contact" id="contact">
-      <h2 class="heading">Contacte  <span>conmigo!</span></h2>
+      <h2 class="heading">Contactate  <span>conmigo!</span></h2>
 
       <form action="#">
         <div class="input-box">
@@ -360,6 +361,36 @@
         <input type="submit" value="Enviar mensaje" class="btn" />
       </form>
     </section>
+  
+  <!--Seccion de footer-->
+  <footer class="footer">
+    <script>
+      // Función para obtener el año actual
+      function obtenerAnioActual() {
+        return new Date().getFullYear();
+      }
+      
+      // Función para actualizar el año en el elemento HTML
+      function actualizarAnio() {
+        var anio = obtenerAnioActual();
+        document.getElementById("anio").textContent = anio;
+      }
+  
+      // Llamada inicial para establecer el año al cargar la página
+      window.onload = function() {
+        actualizarAnio();
+      };
+    </script>
+
+    <div class="footer-text">
+      <p>Copyrigth &copy; <span id="anio"></span> Daniel Celis. Todos los derechos reservados.</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
   </body>
 
 
