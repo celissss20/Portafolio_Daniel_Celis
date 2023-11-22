@@ -1,40 +1,372 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio web Daniel Celis</title>
+    <!--box icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portafolio Daniel Celis</title>
-</head>
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-<body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets\loGO.png" alt="Logo">
-        </div>
-        <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre mí</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-    <section class="aboutMe">
-        <div>
-            <div class="aboutMeText">
-            <h1 id="titulo">¡Hola! <br> Me llamo Daniel Celis!</h1>
-            <p id="texto"> Bienvenido a mi Portafolio web</p>
-        </div>
-        <div class="aboutImage">
-            <img src="assets\pc_escritorio.png" alt="pc">
-        </div>
-    </div>
-    <div class="curva">
+    <!--Jquery-->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
 
-    </div>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/aboutMe.css" />
+    <link rel="stylesheet" href="../css/skills.css" />
+    <link rel="stylesheet" href="../css/proyects.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+
+  <body>
+    <!--Encabezadode la pagina-->
+    <header class="header">
+      <a href="#" class="logo">Portafolio</a>
+
+      <i class="bx bx-menu" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#proyects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </header>
+
+    <!--Home section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hola, soy</h3>
+        <h1>Daniel Celis</h1>
+        <h3>Soy un <span>Desarrollador FrontEnd</span></h3>
+        <p>
+          ¡Bienvenido a mi portafolio web! Aquí encontrarás una muestra de mi
+          trabajo, donde he combinado mi pasión por el diseño y la programación
+          para dar vida a sitios web atractivos y funcionales. Explora mi
+          portfolio y descubre cómo mi experiencia puede aportar valor a tus
+          proyectos".
+        </p>
+
+        <div class="social-media">
+          <a
+            href="https://www.linkedin.com/in/daniel-celis-834a2325b"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="https://github.com/celissss20" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://wa.me/+573222847133" target="_blank"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+        </div>
+
+        <a href="#contact" class="btn">Contacta conmigo!</a>
+      </div>
+
+      <div class="home-img">
+        <img src="../assets/foto.png" alt="Imagen Home" />
+      </div>
     </section>
-</body>
 
+    <!--About me section-->
+    <section class="about" id="about">
+      <div class="home-img">
+        <img src="../assets/foto.png" alt="Imagen Home" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">Sobre <span>Mí</span></h2>
+        <h3>Desarrollador FrontEnd</h3>
+        <p>
+          Soy un ingeniero de sistemas con una pasión por el desarrollo
+          front-end, mi atención se centra en la creación de interfaces de
+          usuario atractivas y altamente funcionales que cautivan a los usuarios
+          y ofrecen experiencias en línea excepcionales.<br />
+          Mi capacidad para traducir conceptos de diseño en sitios web
+          interactivos y receptivos me permite colaborar eficazmente con
+          diseñadores y equipos de desarrollo completos. Siempre estoy buscando
+          retos emocionantes y oportunidades para aprender y crecer en el mundo
+          del desarrollo.
+        </p>
+
+        <a
+          href="assets/CV-Daniel-Celis.pdf"
+          download="assets/CV-Daniel-Celis.pdf"
+          class="btn"
+          >Descargar CV</a
+        >
+      </div>
+    </section>
+
+    <!--Skills section-->
+    <section class="skills" id="skills">
+      <h1 class="skills-title">Mis <span>Habilidades </span></h1>
+
+      <div class="contenedor-skills">
+        <ul class="ul-skills">
+          <li class="item">
+            <a href="#skills">
+              <div class="div-icon">
+                <img
+                  class="icon-img"
+                  src="../assets/HTML-icon.png"
+                  alt="HTML icon"
+                />
+                <div class="icon-text">HTML</div>
+              </div>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#skills">
+              <div class="div-icon">
+                <img
+                  class="icon-img"
+                  src="../assets/CSS-icon.png"
+                  alt="Css icon"
+                />
+                <div class="icon-text">Css</div>
+              </div>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#skills">
+              <div class="div-icon">
+                <img
+                  class="icon-img"
+                  src="../assets/JavaScript-icon.png"
+                  alt="JavaScript icon"
+                />
+                <div class="icon-text">JavaScript</div>
+              </div>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#skills">
+              <div class="div-icon">
+                <img
+                  class="icon-img"
+                  src="../assets/Sass-icon.png"
+                  alt="JavaScript icon"
+                />
+                <div class="icon-text">Sass</div>
+              </div>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#skills">
+              <div class="div-icon">
+                <img
+                  class="icon-img"
+                  src="../assets/Bootstrap-icon.png"
+                  alt="JavaScript icon"
+                />
+                <div class="icon-text">Bootstrap</div>
+              </div>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#skills">
+              <div class="div-icon">
+                <img
+                  class="icon-img"
+                  src="../assets/Git-icon.png"
+                  alt="Git icon"
+                />
+                <div class="icon-text">GitHub</div>
+              </div>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#skills">
+              <div class="div-icon">
+                <img
+                  class="icon-img"
+                  src="../assets/react-icon.png"
+                  alt="ReactJs icon"
+                />
+                <div class="icon-text">ReactJs</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Proyects section-->
+    <section class="proyects" id="proyects">
+      <h2 class="heading">Últimos <span>proyectos</span></h2>
+
+      <div class="proyects-buttons">
+        <a href="#proyects" class="category-item" category="all">Todos</a>
+        <a href="#proyects" class="category-item" category="react">React</a>
+        <a href="#proyects" class="category-item" category="html">Html</a>
+        <a href="#proyects" class="category-item" category="css">Css</a>
+        <a href="#proyects" class="category-item" category="javascript"
+          >JavaScript</a
+        >
+      </div>
+
+      <div class="proyects-container">
+        <!--Inicio de Carrusel-->
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carrusel1">
+                <!-- Primer proyecto -->
+                <div class="proyects-box react html css javascript">
+                  <img
+                    src="../assets/pro-react-traba.png"
+                    alt="Proyecto react"
+                  />
+                  <div class="proyects-layer">
+                    <h4>Gestión de empleados</h4>
+
+                    <div class="proyect-icon">
+                      <span class="pro-span" id="react-color">
+                        <i class="bx bxl-react"></i>React
+                      </span>
+                      <span class="pro-span" id="html-color">
+                        <i class="bx bxl-html5"></i>Html
+                      </span>
+                      <span class="pro-span" id="css-color">
+                        <i class="bx bxl-css3"></i>Css
+                      </span>
+                      <span class="pro-span" id="script-color">
+                        <i class="bx bxl-javascript"></i>JavaScript
+                      </span>
+                    </div>
+                    <p>
+                      Aplicación en React para gestionar empleados y áreas
+                      laborales con personalización de colores. Función de
+                      marcado de favoritos para accesos rápidos.
+                    </p>
+                    <div class="proyects-links">
+                      <a
+                        href="https://org-weld-omega.vercel.app/"
+                        target="_blank"
+                      >
+                        <i class="bx bx-link-external"></i
+                      ></a>
+                      <a
+                        href="https://github.com/celissss20/proyecto_org.git"
+                        target="_blank"
+                        ><i class="bx bxl-github"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Botones del carrusel-->
+              <button
+                id="btn-carrusel"
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button
+                id="btn-carrusel"
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+              <!--Indicadores del carrusel-->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Seccion de contactos-->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contacte  <span>conmigo!</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Nombre completo" required />
+          <input type="email" placeholder="Correo electrónico" required />
+        </div>
+        <div class="input-box">
+          <input
+            type="tel"
+            name="telefono"
+            pattern="[0-9]{10}"
+            placeholder="Número de teléfono"
+            onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+            title="Formato esperado: ##########"
+            required
+          />
+
+          <input type="text" placeholder="Asunto del correo" required />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your message"
+          required
+        ></textarea>
+        <input type="submit" value="Enviar mensaje" class="btn" />
+      </form>
+    </section>
+  </body>
+
+
+  <script src="../javascript/scripts.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
 </html>
