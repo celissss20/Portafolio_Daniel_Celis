@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* Estilo para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+    padding: 10px 20px;
+}
+
+/* Estilo logotipo */
+
+.logo  {img {width: 50px;}} 
+
+/* Estilo enlaces de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+/* Espaciado entre enlaces */
+.nav-links {li{margin-right: 20px;}} 
+
+/* Diseño enlaces */
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Cambiar el color de fondo al pasar el cursor sobre los enlaces */
+.nav-links a:hover {
+    background-color: #111111;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/*Seccion de about me */
+.aboutMe {
+ display: flex;
+ align-items: center;
+ justify-content: right;
+ padding-top: 3rem;
+ background: linear-gradient(to top,#888787 ,#111111) ;
+ height: 70vh;
+ position: relative;
+ .aboutMeText{
+    padding: 1rem;
+    position: absolute;
+    left: 10%;
+    color: #fff;
+    #titulo{
+        font-size: 3rem;
+    }
+ }
+ .aboutImage{
+    position: absolute;
+    right: 10%;
+ }
+}
+
+/* fondo curvo*/
+.curva{
+    position: absolute;
+    height: 225px;
+    width: 100%;
+    bottom: 0;
+}
+.curva::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    color: #111111;
+}
+
+.curva::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    color: #fbf9f9;
+    transform: translate(-4%,40%);
+}

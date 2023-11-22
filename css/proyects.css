@@ -42,7 +42,7 @@
     height: 100%;
 }
 
-.carrusel1,.carrusel2{
+.carrusel1{
     display: flex;
     flex-wrap: wrap;
     position: relative;
