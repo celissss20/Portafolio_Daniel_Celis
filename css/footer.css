@@ -28,5 +28,12 @@
 .footer-iconTop a i {
     font-size: 2.4rem;
     color: var(--second-bg-color);
+}
 
+/*break point*/
+@media (max-width: 768px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
 }

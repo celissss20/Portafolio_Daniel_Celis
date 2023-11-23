@@ -44,3 +44,12 @@ padding-top: 15rem;
     cursor: pointer;
 }
 
+
+/*Breakpoint*/
+@media (max-width: 768px){
+ .contact{
+    padding-top: 17rem;
+ }
+    
+
+}
