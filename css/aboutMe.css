@@ -31,3 +31,27 @@
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
 }
+
+/*Breakpoint */
+@media (max-width: 768px){
+    .about{
+         flex-direction: column-reverse;   
+    }
+
+    .heading{
+        width: 50%; 
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .about-content{
+        width: 50%; 
+        margin: 0 auto; 
+        text-align: center;
+    }
+
+    .about-img{
+        width: 40vw;
+        margin-top: 4rem;
+    }
+}

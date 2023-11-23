@@ -76,6 +76,8 @@ span {
     background: var(--second-bg-color);
 }
 
+/*Breakpoint*/
+
 @media (max-width: 768px){
     .home{
         text-align: center;
@@ -99,6 +101,5 @@ span {
     .home-img{
         width: 40vw;
         margin-top: 4rem;
-
     }
 }
