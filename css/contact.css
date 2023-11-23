@@ -1,5 +1,6 @@
 .contact{
 background:linear-gradient(var(--second-bg-color), var(--bg-color));
+padding-top: 15rem;
 }
 
 .contact h2{
@@ -41,6 +42,5 @@ background:linear-gradient(var(--second-bg-color), var(--bg-color));
 .contact form .btn{
     margin-top: 2rem;
     cursor: pointer;
-    
 }
 
