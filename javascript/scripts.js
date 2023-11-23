@@ -39,6 +39,16 @@ $(document).ready(function () {
     setTimeout(showAll, 700);
   });
 
+  /*--------------Toggle icon navbar------------*/
+    let menuIcon = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
+    menuIcon.onclick = () =>{
+        menuIcon.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+    };
+
+
   /*Scroll section active link*/
   let sections = document.querySelectorAll("section");
   let navLinks = document.querySelectorAll("header nav a");
@@ -61,7 +71,13 @@ $(document).ready(function () {
     });
   };
 
-  /*-----------------Seccion de envio de mensaje de correo------ */
+  /*-----------------Sticki navbar------ */
 
- 
+  let header = document.querySelector('header');
+
+  header.classList.toggle('sticky', window.scrollY > 100);
+
+  /*------remove toggle icon  navbar and when click nabvar link (scroll) ------ */
+       
+
 });
