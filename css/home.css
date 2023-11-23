@@ -82,6 +82,7 @@ span {
     .home{
         text-align: center;
         flex-direction: column;
+        display: block;
     }
 
     .home-content h3{
@@ -99,7 +100,6 @@ span {
     }
 
     .home-img{
-        width: 40vw;
         margin-top: 4rem;
     }
 }

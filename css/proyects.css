@@ -177,3 +177,16 @@
     color: var(--second-bg-color);
     display: inline-flex;
 }
+
+@media (max-width: 768px){
+    .proyects h2{
+        margin-bottom: 3rem;
+    }
+
+    .proyects-container{
+        flex-direction: column;
+
+    }
+}
+
+

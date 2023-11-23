@@ -38,20 +38,22 @@
          flex-direction: column-reverse;   
     }
 
+    .about-content h2 {
+        text-align: center;
+    }
     .heading{
         width: 50%; 
         margin: 0 auto; 
-        text-align: center;
     }
 
     .about-content{
         width: 50%; 
         margin: 0 auto; 
         text-align: center;
+        display: block;
     }
 
     .about-img{
-        width: 40vw;
         margin-top: 4rem;
     }
 }
