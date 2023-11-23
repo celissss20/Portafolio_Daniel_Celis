@@ -166,11 +166,51 @@
 
 /*Break points*/
 
+@media (max-width: 991px){
+  .proyects{
+    padding-bottom: 7rem;
+  }
+}
+
 @media (max-width: 768px){
+    .proyects-container{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
     .proyects h2{
         margin-bottom: 3rem;
     }
 
+    .proyects-layer h4{
+        font-size: 4rem ;
+    }
+
+    .proyect-icon span{
+        font-size: 2.5rem;
+    }
+
+    .proyects-layer p{
+        font-size: 2rem;
+    }
+
+    
 }
 
+@media (max-width: 617px){
+    .proyects-container{
+        grid-template-columns: 1fr;
+    }
+
+    .proyects-layer h4{
+        font-size: 4rem ;
+    }
+
+    .proyect-icon p{
+        font-size: 2.5rem;
+    }
+
+    .proyects-layer p{
+        font-size: 2.5rem;
+    }
+}
 
