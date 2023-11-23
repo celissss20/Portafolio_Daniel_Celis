@@ -1,100 +1,73 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Estilo para la barra de navegación */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #111111;
-  padding: 10px 20px;
+:root {
+    --bg-color: #000615;
+    --second-bg-color: #000e2f;
+    --text-color: #fff;
+    --main-color: #F09D51;
 }
 
-/* Estilo logotipo */
-.logo img {
-  width: 50px;
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
-/* Estilo enlaces de navegación */
-.nav-links {
-  list-style: none;
-  display: flex;
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
-/* Espaciado entre enlaces */
-.nav-links li {
-  margin-right: 20px;
+section {
+    min-height: 100vh;
+    padding: 6rem 9% 2rem;
 }
 
-/* Diseño enlaces */
-.nav-links a {
-  text-decoration: none;
-  color: #555;
-  font-weight: bold;
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
 
-/* Cambiar el color de fondo al pasar el cursor sobre los enlaces */
-.nav-links a:hover {
-  background-color: #111111;
-  color: #fff;
-  border-radius: 5px;
-  padding: 5px 10px;
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
 }
 
-/*Seccion de about me */
-.aboutMe {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  padding-top: 3rem;
-  background: linear-gradient(to top, #888787, #111111);
-  height: 70vh;
-  position: relative;
-}
-.aboutMe .aboutMeText {
-  padding: 1rem;
-  position: absolute;
-  left: 10%;
-  color: #fff;
-}
-.aboutMe .aboutMeText #titulo {
-  font-size: 3rem;
-}
-.aboutMe .aboutImage {
-  position: absolute;
-  right: 10%;
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
 }
 
-/* fondo curvo*/
-.curva {
-  position: absolute;
-  height: 225px;
-  width: 100%;
-  bottom: 0;
+.navbar a:hover {
+    color: var(--main-color);
+    text-shadow: 0 0 1rem #ffffff;
+    border-radius: 100%;
+    transition: .3s;
 }
 
-.curva::before {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  color: #111111;
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
 }
-
-.curva::after {
-  content: "";
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  color: #fbf9f9;
-  transform: translate(-4%, 40%);
-}/*# sourceMappingURL=styles.css.map */
