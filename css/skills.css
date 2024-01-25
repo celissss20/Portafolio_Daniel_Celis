@@ -51,7 +51,7 @@
 
 .icon-text {
     font-size: 3rem;
-    color: #03aabc;
+    color: #ff0000;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -67,4 +67,15 @@
 
 .div-icon:hover .icon-img {
     filter: grayscale(1) blur(3px);
+}
+
+/*********Beackpoint 768PX*********/
+@media (max-width: 768px){
+    .skills{
+        padding-top: 5rem;
+    }
+
+    .skills-title{
+        font-size: 6rem;
+    }
 }
