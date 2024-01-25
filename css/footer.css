@@ -30,10 +30,13 @@
     color: var(--second-bg-color);
 }
 
-/*break point*/
+/*********Beackpoint 768PX*********/
 @media (max-width: 768px){
     .footer{
         display: flex;
         flex-direction: column;
+    }
+    .footer-text p {
+        font-size: 2rem;
     }
 }
