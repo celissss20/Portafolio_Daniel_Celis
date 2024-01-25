@@ -172,13 +172,22 @@
   }
 }
 
+/*********Beackpoint 768PX*********/
+
 @media (max-width: 768px){
     .proyects-container{
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        align-items: center;
+        gap: 2.5rem;
     }
 
     .proyects h2{
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
+    }
+
+    .proyects-buttons{
+        font-size: 2.5rem;
     }
 
     .proyects-layer h4{
@@ -193,6 +202,13 @@
         font-size: 2rem;
     }
 
+    .proyects-layer a{
+        width: 6rem;
+        height: 6rem;
+    }
+    .proyects-layer a i{
+        font-size: 4rem;
+    }
     
 }
 
