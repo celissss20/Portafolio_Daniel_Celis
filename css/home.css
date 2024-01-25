@@ -76,28 +76,39 @@ span {
     background: var(--second-bg-color);
 }
 
-/*Breakpoint*/
+/*********Beackpoint 768PX*********/
 
 @media (max-width: 768px){
     .home{
-        padding-top: 15rem;
+        padding-top: 10rem;
         text-align: center;
         flex-direction: column;
         display: block;
     }
 
     .home-content h3{
-        font-size: 2.6rem;
+        font-size: 4rem;
     }
 
     .home-content h1{
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
     .home-content p {
-        width: 50%; /* Limita el ancho del párrafo */
+        width: 80%; /* Limita el ancho del párrafo */
         margin: 0 auto; /* Centra horizontalmente */
         text-align: center;
+        font-size: 2.25rem;
+    }
+
+    .social-media a {
+        width: 6rem;
+        height: 6rem;
+        font-size: 4rem;
+    }
+
+    .btn{
+        font-size: 2.25rem;
     }
 
     .home-img{
