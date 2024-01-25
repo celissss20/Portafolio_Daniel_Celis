@@ -98,6 +98,11 @@ section {
 }
 
 @media (max-width: 768px){
+   
+ section {
+    min-height: 65vh;
+ }
+
     #menu-icon{
         display: block;
     }
