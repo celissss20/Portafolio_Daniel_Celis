@@ -1,0 +1,37 @@
+{
+    "home":{
+        "homeHola":"Hi, I am",
+        "homeRol":"I am a Front End Developer!",
+        "homeDescripcion":"Welcome to my web portfolio! Here you will find a sample of my work, where I have combined my passion for design and programming to bring to life attractive and functional websites. Explore my portfolio and discover how my experience can add value to your projects.",
+        "homeBoton":"Contact me!"
+    },
+    "about":{
+        "aboutSobre":"About Me",
+        "aboutDescripcion":"I am a systems engineer with a passion for front-end development, my focus is on creating engaging and highly functional user interfaces that captivate users and deliver exceptional online experiences. My ability to translate design concepts into interactive and responsive websites allows me to collaborate effectively with designers and entire development teams. I am always looking for exciting, challenging, and exciting opportunities to learn and grow in the development world.",
+        "AboutCV":"Download CV"
+    },
+    "skills":{
+        "skillsTitle":"My Skills"
+    },
+    "proyects":{
+        "proyectsTitle":"My projects",
+        "proyectsFilter":"All",
+        "proyectOneTitle":"Employee management",
+        "proyectOneDescription":"React application to manage employees and work areas with color customization. Bookmark function for quick access.",
+        "proyectTwoTitle":" flexbox project",
+        "proyectTwoDescription":"The website I have designed consists of a simulation of a web course site, but its main objective is to show the use of felxbox for the organization of all the elements of the page, so it also has a responsive design."
+    },
+    "contact":{
+        "contactTitle":"Contact Me!",
+        "contactFullName":"Full name",
+        "contactEmail":"E-mail address",
+        "contactPhone":"Telephone number",
+        "contactSubject":"Subject of the mail",
+        "contactMessage":"Your message",
+        "contactSend":"Send message"
+    },
+    "footer":{
+        "footerText":"Copyrigth &copy; Daniel Celis. All rights reserved."
+    }
+
+}

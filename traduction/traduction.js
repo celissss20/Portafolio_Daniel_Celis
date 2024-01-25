@@ -1,0 +1,1 @@
+const cambiarTexto = document.querySelectorAll("[data-section] [data-value]");
