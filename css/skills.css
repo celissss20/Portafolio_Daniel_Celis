@@ -79,3 +79,21 @@
         font-size: 6rem;
     }
 }
+
+/*********Beackpoint 425PX --- 320px*********/
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+    
+    .icon-img {
+        height: 12rem;
+        width: 12rem;
+    }
+    .ul-skills{
+        gap: 1rem;
+    }
+
+    .div-icon:hover .icon-text {
+        transform: translateX(-8%) translateY(-182%);
+    }
+
+}
