@@ -230,3 +230,32 @@
     }
 }
 
+/*********Beackpoint 425PX --- 320px*********/
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+
+    .proyects{
+        margin-top: 2rem;
+    }
+
+    .proyects-container {
+        justify-items: center;
+    }
+
+    .proyects-box{
+        width: 80%;
+    }
+
+    .proyects-layer h4{
+        font-size: 3rem;
+    }
+
+    .proyect-icon span{
+        font-size: 1.9rem;
+        color: #000000;
+    }
+
+    .proyects-layer p{
+        font-size: 1.8rem;
+    }
+}
