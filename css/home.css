@@ -6,17 +6,16 @@
     background: var( --bg-color);
 }
 
-.btnLeguaje{
+#btnLeguaje{
     display: flex;
     justify-content: center;
     align-items: center;
     background: transparent;
-    position: absolute;
-    left: 78rem;
+    margin-left: auto; /* Mueve el botón al extremo izquierdo */
     font-size: 2rem; 
 }
 
-.btnLeguaje img{
+#btnLeguaje img{
     width: 5rem;
     height: 5rem; 
 }
@@ -96,16 +95,7 @@ span {
     background: var(--second-bg-color);
 }
 
-/*********Breackpoint 1440PX*********/
-
-@media (max-width: 1203px){
-    .btnLeguaje{
-        left: 66rem;
-    }
-}
-
 /*********Breackpoint 768PX*********/
-
 @media (max-width: 768px){
     .home{
         padding-top: 10rem;
@@ -114,16 +104,7 @@ span {
         display: block;
     }
 
-    .btnLeguaje{
-        left: 100rem;
-        font-size: 2.5rem; 
-    }
-    
-    .btnLeguaje img{
-        width: 6rem;
-        height: 6rem; 
-    }
-    
+
     #spanL{
         color: #929191;
     }
@@ -158,19 +139,3 @@ span {
     }
 }
 
-/*********Breackpoint 425PX --- 320px*********/
-
-@media screen and (max-width: 425px) and (min-width: 320px) {
-    .btnLeguaje{
-        left: 41rem;
-    }
-    
-    .btnLeguaje img{
-        width: 5.25rem;
-        height: 5.25rem; 
-    }
-    
-    #spanL{
-        color: #929191;
-    }
-}
