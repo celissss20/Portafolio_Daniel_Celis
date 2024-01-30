@@ -37,13 +37,6 @@
     <header class="header">
       <a href="#" class="logo">Portafolio</a>
 
-       <!--BOTON DE IDIOMAS-->
-      <button id="btnLeguaje" data-lenguage="spanish">
-        <img src="assets\lenESP.png" 
-        alt="Spanish">
-        <span id="spanL">ESP</span> 
-      </button>
-
       <i class="bx bx-menu" id="menu-icon"></i>
 
       <nav class="navbar">
@@ -58,12 +51,12 @@
     <!--Home section -->
     <section class="home" id="home">
       <div class="home-content">
-        <h3 data-section="home" data-value="homeHola">Hola, soy</h3>
+        <h3>Hola, soy</h3>
         <h1>Daniel Celis</h1>
-        <h3 data-section="home" data-value="homeRol">
+        <h3>
           Soy un <span>Desarrollador FrontEnd!</span>
         </h3>
-        <p data-section="home" data-value="homeDescripcion">
+        <p>
           ¡Bienvenido a mi portafolio web! Aquí encontrarás una muestra de mi
           trabajo, donde he combinado mi pasión por el diseño y la programación
           para dar vida a sitios web atractivos y funcionales. Explora mi
@@ -85,12 +78,7 @@
           ></a>
         </div>
 
-        <a
-          href="#contact"
-          class="btn"
-          data-section="home"
-          data-value="homeBoton"
-        >
+        <a href="#contact" class="btn">
           Contacta conmigo!
         </a>
       </div>
@@ -107,10 +95,10 @@
       </div>
 
       <div class="about-content">
-        <h2 class="heading" data-section="about" data-value="aboutSobre">
+        <h2 class="heading">
           Sobre <span>Mí</span>
         </h2>
-        <p data-section="about" data-value="aboutDescripcion">
+        <p>
           Soy un ingeniero de sistemas con una pasión por el desarrollo
           front-end, mi atención se centra en la creación de interfaces de
           usuario atractivas y altamente funcionales que cautivan a los usuarios
@@ -122,20 +110,16 @@
           del desarrollo.
         </p>
 
-        <a
-          href="assets\DANIEL_ALEJANDRO_CELIS_CALDERON _CV.pdf"
+        <a href="assets\DANIEL_ALEJANDRO_CELIS_CALDERON _CV.pdf"
           download="DANIEL_ALEJANDRO_CELIS_CALDERON _CV.pdf"
           class="btn"
-          data-section="about"
-          data-value="AboutCV"
-          >Descargar CV</a
-        >
+          >Descargar CV</a >
       </div>
     </section>
 
     <!--Skills section-->
     <section class="skills" id="skills">
-      <h1 class="skills-title" data-section="skills" data-value="skillsTitle">
+      <h1 class="skills-title">
         Mis <span>Habilidades </span>
       </h1>
 
@@ -237,20 +221,12 @@
 
     <!--Proyects section-->
     <section class="proyects" id="proyects">
-      <h2 class="heading" data-section="proyects" data-value="proyectsTitle">
+      <h2 class="heading">
         Mis <span>proyectos</span>
       </h2>
 
       <div class="proyects-buttons">
-        <a
-          href="#proyects"
-          class="category-item"
-          category="all"
-          data-section="proyects"
-          data-value="proyectsFilter"
-        >
-          Todos
-        </a>
+        <a href="#proyects" class="category-item" ategory="all">Todos</a>
         <a href="#proyects" class="category-item" category="react">React</a>
         <a href="#proyects" class="category-item" category="html">Html</a>
         <a href="#proyects" class="category-item" category="css">Css</a>
@@ -264,9 +240,7 @@
         <div class="proyects-box react html css javascript">
           <img src="../assets/pro-react-traba.png" alt="Proyecto react" />
           <div class="proyects-layer">
-            <h4 data-section="proyects" data-value="proyectOneTitle">
-              Gestión de empleados
-            </h4>
+            <h4>Gestión de empleados</h4>
 
             <div class="proyect-icon">
               <span class="pro-span" id="react-color">
@@ -282,7 +256,7 @@
                 <i class="bx bxl-javascript"></i>JavaScript
               </span>
             </div>
-            <p data-section="proyects" data-value="proyectOneDescription">
+            <p>
               Aplicación en React para gestionar empleados y áreas laborales con
               personalización de colores. Función de marcado de favoritos para
               accesos rápidos.
@@ -304,7 +278,7 @@
         <div class="proyects-box html css">
           <img src="../assets/flexbox.png" alt="Proyecto flexbox" />
           <div class="proyects-layer">
-            <h4 data-section="proyects" data-value="proyectTwoTitle">
+            <h4>
               Proyecto flexbox
             </h4>
 
@@ -316,7 +290,7 @@
                 <i class="bx bxl-css3"></i>Css
               </span>
             </div>
-            <p data-section="proyects" data-value="proyectTwoDescription">
+            <p>
               La página web que he diseñado consta de una simulacion de un sitio
               de cursos web, pero su objetivo principal es mostrar el uso de
               felxbox para la organización de todos los elementos de la pagina,
@@ -339,7 +313,7 @@
 
     <!--Seccion de contactos-->
     <section class="contact" id="contact">
-      <h2 class="heading" data-section="contact" data-value="contactTitle">
+      <h2 class="heading">
         ¡Contácte <span>Conmigo!</span>
       </h2>
 
@@ -348,22 +322,16 @@
           <input
             type="text"
             name="nombre"
-            data-section="contact"
-            data-value="contactFullName"
             placeholder="Nombre completo"
             autocomplete="off"
-            required
-          />
+            required />
 
           <input
             type="email"
             name="_replyto"
-            data-section="contact"
-            data-value="contactEmail"
             placeholder="Correo electrónico"
             autocomplete="off"
-            required
-          />
+            required />
 
         </div>
         <div class="input-box">
@@ -372,42 +340,32 @@
             type="tel"
             name="telefono"
             pattern="[0-9]{10}"
-            data-section="contact"
-            data-value="contactPhone"
             placeholder="Número de teléfono"
             onkeypress="return event.charCode >= 48 && event.charCode <= 57"
             title="Formato esperado: ##########"
             autocomplete="off"
-            required
-          />
+            required />
           <input
             type="text"
             name="asunto"
-            data-section="contact"
-            data-value="contactSubject"
             placeholder="Asunto del correo"
             autocomplete="off"
-            required
-          />
+            required/>
+
         </div>
 
         <textarea
           name="mensaje"
           cols="30"
           rows="10"
-          data-section="contact"
-          data-value="contactMessage"
           placeholder="Tu mensaje"
           autocomplete="off"
-          required
-        ></textarea>
+          required>
+        </textarea>
 
         <input type="submit" 
-        data-section="contact"
-        data-value="contactSend"
         value="Enviar mensaje" 
-        class="btn" 
-        />
+        class="btn" />
 
       </form>
     </section>
@@ -433,7 +391,7 @@
       </script>
 
       <div class="footer-text">
-        <p data-section="footer" data-value="footerText">
+        <p>
           Copyrigth &copy; <span id="anio"></span> Daniel Celis. Todos los
           derechos reservados.
         </p>
@@ -449,7 +407,8 @@
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous">
+  </script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="javascript/traduction.js"></script>
 </html>
