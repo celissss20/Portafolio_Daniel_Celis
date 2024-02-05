@@ -54,7 +54,7 @@
         <h3>Hola, soy</h3>
         <h1>Daniel Celis</h1>
         <h3>
-          Soy un <span>Desarrollador FrontEnd!</span>
+          Soy un <span id="element">Desarrollador FrontEnd!</span>
         </h3>
         <p>
           ¡Bienvenido a mi portafolio web! Aquí encontrarás una muestra de mi
@@ -120,7 +120,7 @@
     <!--Skills section-->
     <section class="skills" id="skills">
       <h1 class="skills-title">
-        Mis <span>Habilidades </span>
+        Mis<span>Habilidades </span>
       </h1>
 
       <div class="contenedor-skills">
@@ -411,4 +411,16 @@
   </script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="javascript/traduction.js"></script>
-</html>
+  <!--Animacion-->
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit/dist/typeit.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        new TypeIt("#element", {
+            strings:"",
+            speed: 120,
+            loop: true,
+        }).go();
+    });
+</script>
+  </html>
