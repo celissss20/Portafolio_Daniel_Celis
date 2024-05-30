@@ -59,6 +59,10 @@
     }
 
     .about-img{
-        margin-top: 4rem;
+        width: 20vw;
+        margin: 5rem;
+        border: 0.5rem solid transparent; /* Elimina el borde inicial */
+        filter: drop-shadow(0 0 1rem #1f0b8f);  
     }
+    
 }
