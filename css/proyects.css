@@ -126,11 +126,15 @@
 #css-color{
     background:#254BDD;
     color:black;
-
-
 }
+
 #script-color{
     background:#E8D44D;
+    color:black;
+}
+
+#power-color{
+    background:#ea9c00;
     color:black;
 }
 
